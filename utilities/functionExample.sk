@@ -1,0 +1,25 @@
+#Created by _C02 on 12/22/18
+#Created for Examples. Feel free to use on your kingdoms.
+#https://www.kingdoms.gg
+#mc.kingdoms.gg
+
+function playBCSound():
+	loop all players:
+		play sound "entity.chicken.egg" with volume 1 with pitch 2 at loop-player for loop-player
+function something():
+  broadcast "&cHello, I'm a function, doing something!" 
+  playBCSound()
+command /callmyfunction:
+  trigger:
+	something()	
+	
+	
+
+function banPlayer(p: player):
+  ban {_p} for "&fBye!"
+command /functionban [<player>]:
+  trigger:
+	if arg 1 is set:
+	   banPlayer(arg-1)
+	else:
+	  send "&cOops, no player entered!"
