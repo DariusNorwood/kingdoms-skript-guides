@@ -1,0 +1,9 @@
+function printHello(p: player):
+  send "&fHello, World!" to {_p}
+command /helloworld:
+  trigger:
+    printHello(player)
+
+ command /helloworldbc:
+  trigger:
+    broadcast "&fHello, world!"
