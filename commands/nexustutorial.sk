@@ -1,0 +1,82 @@
+command /tutorial [<text>]:
+	trigger:
+		set {tutorial.%player%} to 1
+		if player's world is "warzone-lobby":
+			send ""
+			send "&aWelcome to &e&lNEXUS&a!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player 
+			wait 3 seconds 
+			send ""
+			send "&e&lNEXUS &ais an Official &6Kingdoms.gg &aServer."
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 5 seconds 
+			send ""
+			send "&aThis means that it is not a normal Kingdom, rather, it is developed and moderated by &6Kingdoms.gg &aStaff (and detainz)."
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 8 seconds
+			send ""
+			send "&aThis also means that events are held here, which can include"
+			send "&6Credit Giveaways&a!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 7 seconds 
+			send ""
+			send "&aYou can begin by typing &6/play&a. This will teleport you to the arena."
+			send "&c&lWAIT THOUGH!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 9 seconds 
+			send ""
+			send "&aYou should edit your layout first! Your layout are the items that you enter the game with."
+			send "&aOnce you purchase an item for your layout, you cannot change it back, so &6BE CAUTIOUS&a!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 10 seconds 
+			send ""
+			send "&aYou can edit your layout by going to the &e&lEDIT KIT LAYOUT"
+			send "&aNPC in the lobby, or by typing &6/layout&a."
+			execute console command "tp %player% 138 5 960"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 4 seconds 
+			send ""
+			send "&aYou will automatically get these items when the game starts!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 5 seconds 
+			send ""
+			send "&aYou must purchase the items for your layout with &6Coins&a."
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 4 seconds 
+			send ""
+			send "&6Coins &aare the center point of the &e&lNEXUS &acustom economy."
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 4 seconds 
+			send ""
+			send "&aYou can acquire &6Coins &athrough getting &cKills &ain the game."
+			send "&aYou can also get some by saying ""&dGG&a"" after a game ends."
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 6 seconds 
+			send ""
+			send "&aWe also do &6Coin &agiveaways on our &9Discord&a!"
+			send "&aYou can join our &9Discord by &b<underline><link:https://discord.gg/fYYtCMP>clicking here<reset>&r&a!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 5 seconds 
+			send ""
+			send "&aWell, it looks like you're all ready to be an awesome &e&LNEXUS &aplayer!"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			wait 6 seconds
+			send ""
+			send "&aThanks for taking the tutorial! If you need any help, contact staff."
+			send "&c[Admin] &e[Mod] [Jr.Mod]"
+			send ""
+			play sound "block.note.harp" with volume 1 with pitch 1 at player for player
+			delete {tutorial.%player%}
