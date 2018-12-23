@@ -1,0 +1,19 @@
+command /playsound [<offline player>]:
+  permission: rank.admin 
+  permission message: &c_C02 says no!
+  trigger:
+    if arg 1 is set:
+      if offlineplayer-arg is online:
+        play sound "block.note.harp" with volume 1 with pitch 1 at arg-1 for arg-1
+      else:
+        send "&cSorry, but you cannot play a sound to a player who is not online."
+    else:
+      play sound "block.note.harp" with volume 1 with pitch 1 at player for player #if you want other players to hear it, replace 'for player' with 'for loop-player', and loop the player at the top. Example below.
+      
+#To LOOP-PLAYER:
+command /playsound:
+  permission: rank.admin 
+  permission message: &c_C02 says no!
+  trigger:
+    loop all players:
+        play sound "block.note.harp" with volume 1 with pitch 1 at loop-player for loop-player
