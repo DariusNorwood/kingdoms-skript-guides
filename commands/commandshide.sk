@@ -1,0 +1,14 @@
+on command:
+	if command contains "skript":
+		if player has permission "rank.admin":
+			stop 
+		else:
+			cancel event 
+			send "&fUnknown command. Type ""/help"" for help."
+on command "op":
+  if player has permission "op":
+    stop
+  else:
+   cancel event
+   send "&cNope!"
+  
